@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculadora.css" />
+    <title>Calculadora com JavaScript</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Minha primeira calculadora</h1>
+    </header>
+    <form>
+      <div id="tit">
+        <h1>Calculadora Simples</h1>
+      </div>
+      <div id="res">resultado:</div>
+      <div>
+        <button onclick="btndel()" type="button">C</button>
+        <button onclick="operacao('/')" type="button">÷</button>
+        <button onclick="deleteum()" type="button">D</button>
+        <button onclick="operacao('*')" type="button">x</button>
+      </div>
+      <div>
+        <button onclick="inserirNumero('7')" type="button">7</button>
+        <button onclick="inserirNumero('8')" type="button">8</button>
+        <button onclick="inserirNumero('9')" type="button">9</button>
+        <button onclick="operacao('-')" type="button">-</button>
+      </div>
+      <div>
+        <button onclick="inserirNumero('4')" type="button">4</button>
+        <button onclick="inserirNumero('5')" type="button">5</button>
+        <button onclick="inserirNumero('6')" type="button">6</button>
+        <button onclick="operacao('+')" type="button">+</button>
+      </div>
+      <div>
+        <button onclick="inserirNumero('1')" type="button">1</button>
+        <button onclick="inserirNumero('2')" type="button">2</button>
+        <button onclick="inserirNumero('3')" type="button">3</button>
+        <button onclick="operacao('.')" type="button">.</button>
+      </div>
+      <div>
+        <!--Se alguem souber como trabalhar com (), aceito ajuda!-->
+        <button onclick="operacao('(')" type="button" id="equals">(</button>
+        <button onclick="operacao(')')" type="button" id="equals">)</button>
+        <button onclick="inserirNumero('0')" type="button">0</button>
+        <button onclick="calcular()" type="button" id="igual">=</button>
+      </div>
+    </form>
+    <script src="calculadora.js"></script>
+  </body>
+</html>
